@@ -12,19 +12,18 @@ Console.WriteLine("Введите любое число");
 int num = Convert.ToInt32(Console.ReadLine());
 int count = 1;
 
-if (num % 2 == 0 && count <= num)
-{
-    // while (count <= num)
-    // {
-    //     Console.Write(count +" ");
-    //     count = count + 1;
-    // }
-    Console.Write($"Чётные числа диапазона от 1 до {num}: ");
-    Console.Write(count +" ");
-    count = count + 1;
-}
-
-else
+if (num < 1)
 {
     Console.Write($"Чётные числа диапазона от 1 до {num}: отсутствуют");
+}
+else (num % 2 == 0 && count <= num);
+{
+    while (count <= num)
+    {
+        Console.Write(count + " ");
+        count = count + 1;
+    }
+    Console.Write($"Чётные числа диапазона от 1 до {num}: ");
+    Console.Write(count + " ");
+    count = count + 1;
 }
