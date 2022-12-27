@@ -10,7 +10,7 @@ Console.WriteLine("Введите цифру от 1 до 7, где 1 - это п
 int number = Convert.ToInt32(Console.ReadLine());
 if (number >= 1 && number <= 7)
 {
-    Console.WriteLine(Day(number) ? "да" : "нет");
+    Console.WriteLine(Day(number) ? "нет" : "да");
 
 bool Day(int number)
 {

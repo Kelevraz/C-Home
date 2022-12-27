@@ -8,8 +8,8 @@
 // 782 -> 8
 // 918 -> 1
 
-int number = new Random().Next(100, 1000);
-Console.WriteLine($"Случайное трехзначное число => {number}");
+Console.WriteLine("Введите любое трехзначное число");
+int number = Convert.ToInt32(Console.ReadLine());
 
 int secondDit = (number / 10) % 10;
 
