@@ -11,22 +11,25 @@
 
 // 32679 -> 6
 
-int number = new Random().Next();
-Console.WriteLine($"Число => {number}");
+// int number = new Random().Next();
+//Console.WriteLine($"Случайное число => {number}");
 
-// bool Three(int number)
-// {
-//     return number > 99 && number < 1000;
-// }
+Console.WriteLine("Введите случайное число");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Случайное число => {number}");
+int digit = number % 10;
 
-if (number > 999)
-{
-    while ({number} / 10);
-}
-else if (number < 100)
+while (number >= 1000)
+	{
+		number = number / 10;
+	}
+
+if (number < 100)
 {
     Console.WriteLine($"В числе {number} нет третьей цифры");
 }
-else{
-    Console.WriteLine($"Третья цифра числа {number} => {digit}");
+
+else if (number >= 100 && number <= 999)
+{
+	Console.WriteLine($"Число => {digit}");
 }
