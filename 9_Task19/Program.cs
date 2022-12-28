@@ -11,16 +11,23 @@ Console.WriteLine("Введите пятизначное число");
 int num1 = Convert.ToInt32(Console.ReadLine());
 int numReturn = num1;
 int num2 = 0;
-while (numReturn > 0) 
+if (num1 >= 10000 && num1 <= 100000)
 {
-    num2 = num2 * 10 + numReturn % 10;
-    numReturn /= 10;
-}
-if (num1 == num2)
-{
-    Console.WriteLine("Да, число является палиндромом");
+    while (numReturn > 0) 
+    {
+        num2 = num2 * 10 + numReturn % 10;
+        numReturn /= 10;
+    }
+    if (num1 == num2)
+    {
+        Console.WriteLine("Да, число является палиндромом");
+    }
+    else
+    {
+        Console.WriteLine("Нет, число не является палиндромом");
+    }
 }
 else
 {
-    Console.WriteLine("Нет, число не является палиндромом");
+    Console.WriteLine("Введено неверное число, попробуйте ещё раз");
 }
